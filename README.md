@@ -4,9 +4,9 @@ a demo of graphql, server use nodejs, fe use react
  ### [官方教程](https://graphql.cn/learn/)
 
 ### Koa 环境搭建过程  [koa文档](https://koa.bootcss.com/)
-####1.搭建Koa基础
+#### 1.搭建Koa基础
 
-```
+```javascript
 const Koa = require('koa');
 const app = new Koa();
 
@@ -26,8 +26,8 @@ app.use(async ctx => {
 app.listen(3000);
 ```
 
-####2. koa 路由配置
-```
+#### 2. koa 路由配置
+```javascript
 npm install koa-router koa-bodyparser
 ```
 
@@ -46,8 +46,8 @@ app.listen(9000);
 
 ```
 
-####3. 集成mongo DB
-```
+#### 3. 集成mongo DB
+```javascript
 const db = mongoose.connect("mongodb://localhost/testDB")
 
 var UserSchema = new mongoose.Schema({
